@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakuģojieties kopā</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f2;
+            text-align: center;
+        }
+        header {
+            background-color: #ff6699;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 4px solid #ff99bb;
+        }
+        .description {
+            margin: 20px;
+            font-size: 18px;
+            color: #cc3366;
+        }
+        .trip-options {
+            background-color: #ffd9e6;
+            padding: 20px;
+        }
+        .trip {
+            margin: 10px auto;
+            padding: 15px;
+            background-color: white;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 102, 153, 0.3);
+            border: 2px solid #ff6699;
+        }
+        .trip h3 {
+            color: #ff3366;
+        }
+        footer {
+            background-color: #ff6699;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>Mīļākās Pasažieres</header>
+    <div class="gallery">
+        <img src="resources/images/ship_0.png" alt="Kuģis jūrā">
+        <img src="resources/images/ship_1.png" alt="Romantiska kruīza bilde">
+        <img src="resources/images/ship_2.png" alt="Saulriets uz kuģa">
+    </div>
+    <div class="trip-options">
+        <div class="trip">
+            <h3>Sakuģojieties kopā</h3>
+            <p>Jaukā gaisotnē uz kuģa iepazīstieties ar skaistām meitenēm vai vienkāršiem puišiem, kas zina, varbūt sastapsiet otru pusīti.</p>
+        </div>
+        <div class="trip">
+            <h3>Romantiskais kruīzs</h3>
+            <p>Dodieties saulrieta braucienā un baudiet romantisku vakaru jūras viļņos.</p>
+        </div>
+        <div class="trip">
+            <h3>Piedzīvojumu ekspedīcija</h3>
+            <p>Izpētiet noslēpumainas salas un jūras dzīles ar mūsu īpašo piedzīvojumu braucienu.</p>
+        </div>
+        <div class="trip">
+            <h3>Draudzības reiss</h3>
+            <p>Iepazīstieties ar jauniem draugiem un baudiet kopā būšanu uz klāja.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 SIA PP | Īpašniece: Pula Paurauska
+    </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "files.eol": "\r\n",
+    "cSpell.words": [
+        "Vitterns"
+    ],
+    "files.exclude": {
+        "scripts/**": true
+    }
+}
