@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tava mīla manā kuģī</title>
+</head>
+<body>
+    <!-- Floating hearts background -->
+    <div class="hearts-bg" aria-hidden="true">
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+        <span class="heart">&#10084;</span>
+    </div>
+    <header>
+        <div class="header-inner">
+            <span class="site-title">&#10084; Tava mīla manā kuģī &#10084;</span>
+        </div>
+    </header>
+
+    <div class="gallery">
+        <img src="./images/ship_0.png" alt="Kuģis jūrā">
+        <img src="./images/ship_1.png" alt="Romantiska kruīza bilde">
+        <img src="./images/ship_2.png" alt="Saulriets uz kuģa">
+    </div>
+
+    <div class="trip-options">
+        <div class="trip">
+            <h3>Sakuģojieties kopā</h3>
+            <p>Jaukā gaisotnē uz kuģa iepazīstieties ar skaistām meitenēm vai vienkāršiem puišiem, kas zina, varbūt sastapsiet otru pusīti.</p>
+        </div>
+        <div class="trip">
+            <h3>Romantiskais kruīzs</h3>
+            <p>Dodieties saulrieta braucienā un baudiet romantisku vakaru jūras viļņos.</p>
+        </div>
+        <div class="trip">
+            <h3>Piedzīvojumu ekspedīcija</h3>
+            <p>Izpētiet noslēpumainas salas un jūras dzīles ar mūsu īpašo piedzīvojumu braucienu.</p>
+        </div>
+        <div class="trip">
+            <h3>Draudzības reiss</h3>
+            <p>Iepazīstieties ar jauniem draugiem un baudiet kopā būšanu uz klāja.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; <span id="copy-year"></span> SIA PP | Īpašniece: Pula Paurauska
+    </footer>
+
+    <!-- Sticky bottom bar with register button -->
+    <div class="sticky-bar">
+        <button id="music-toggle" class="music-btn" title="Mūzika">&#9834;</button>
+        <button id="open-registration" class="register-btn">&#10084; Pieteikties &#10084;</button>
+    </div>
+
+    <!-- Registration modal -->
+    <div id="registration-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" id="close-registration" aria-label="Aizvērt">&times;</button>
+            <h2 id="modal-title">Pieteikšanās</h2>
+            <form id="registration-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Vārds</label>
+                    <div class="hint">Šis lauks paliks privāts un to neviens neredzēs</div>
+                    <input type="text" id="name" name="name" />
+                    <div class="error" id="error-name"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-pasts</label>
+                    <div class="hint">Šis lauks paliks privāts un to neviens neredzēs</div>
+                    <input type="email" id="email" name="email" />
+                    <div class="error" id="error-email"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Numurs</label>
+                    <div class="hint">Šis lauks paliks privāts un to neviens neredzēs</div>
+                    <input type="text" id="phone" name="phone" />
+                    <div class="error" id="error-phone"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="lovename">Mīlvārds</label>
+                    <div class="hint">Jūsu iesauka vai mīlestības vārds (neobligāts)</div>
+                    <input type="text" id="lovename" name="lovename" />
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Pieteikuma iemesls (atzīmējiet vismaz vienu)</legend>
+                    <label><input type="checkbox" name="reason" value="Sakuģojieties kopā"> Sakuģojieties kopā</label><br />
+                    <label><input type="checkbox" name="reason" value="Romantiskais kruīzs"> Romantiskais kruīzs</label><br />
+                    <label><input type="checkbox" name="reason" value="Piedzīvojumu ekspedīcija"> Piedzīvojumu ekspedīcija</label><br />
+                    <label><input type="checkbox" name="reason" value="Draudzības reiss"> Draudzības reiss</label>
+                    <div class="error" id="error-reason"></div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="motivation">Motivācija</label>
+                    <div class="hint">Pastāstiet īsi, kāpēc vēlaties piedalīties</div>
+                    <textarea id="motivation" name="motivation"></textarea>
+                    <div class="error" id="error-motivation"></div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" id="submit-registration">Pieteikties</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="print-area"></div>
+
+    <script type="module" src="./main.ts"></script>
+</body>
+</html>
